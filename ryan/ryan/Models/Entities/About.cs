@@ -2,13 +2,13 @@
 
 namespace ryan.Models.Entities
 {
-    public class About
+    public class About : BaseEntities
     {
         public string Name { get; set; }
         public string SurName { get; set; }
         public string ImagePath { get; set; }
     }
-    public class AboutMe
+    public class AboutMe : BaseEntities
     {
         public string Info { get; set; }
         public int Age { get; set; }
@@ -18,20 +18,17 @@ namespace ryan.Models.Entities
     }
     public class MyServices : HistoryWatch
     {
-        public int Id { get; set; }
         public string Head { get; set; }
         public string Title { get; set; }
     }
     public class Pricing : HistoryWatch
     {
-        public int Id { get; set; }
         public string Head { get; set; }
         public string Price { get; set; }
     }
 
     public class PricingAdvantages : HistoryWatch
     {
-        public int Id { get; set; }
         public int PricingId { get; set; }
         public string Title { get; set; }
         public bool New { get; set; }
@@ -39,17 +36,15 @@ namespace ryan.Models.Entities
 
     public class FunFact : HistoryWatch
     {
-        public int Id { get; set; }
         public string Title { get; set; }
     }
     public class Clients : HistoryWatch
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string ImagePath { get; set; }
     }
 
-    public class Quote
+    public class Quote : BaseEntities
     {
         public string FullName { get; set; }
         public string Title { get; set; }
