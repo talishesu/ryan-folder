@@ -28,13 +28,13 @@ using ryan.Models;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\Views\_ViewImports.cshtml"
-using riode.Models.ViewModels;
+using ryan.Models.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ff3113328b76d41d4bfbd09b01ccf8cd08ae9a0d", @"/Views/Contacts/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3dd1ea090656344a8532238f3f8735ba100cfc67", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fe0d5defa18fedf36a1467b002bb1e08c7356e4a", @"/Views/_ViewImports.cshtml")]
     public class Views_Contacts_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("cform"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -114,7 +114,7 @@ using riode.Models.ViewModels;
 						<!-- title -->
 						<div class=""title"">Contact For");
             WriteLiteral("m</div>\r\n\r\n\t\t\t\t\t\t<!-- content -->\r\n\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t<div class=\"col col-d-12 col-t-12 col-m-12 border-line-v\">\r\n\t\t\t\t\t\t\t\t<div class=\"contact_form\">\r\n\t\t\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff3113328b76d41d4bfbd09b01ccf8cd08ae9a0d5587", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff3113328b76d41d4bfbd09b01ccf8cd08ae9a0d5586", async() => {
                 WriteLiteral(@"
 										<div class=""row"">
 											<div class=""col col-d-6 col-t-6 col-m-12"">

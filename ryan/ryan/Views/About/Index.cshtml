@@ -31,10 +31,10 @@
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="info-list">
 									<ul>
-										<li><strong>Age . . . . .</strong></li>
-										<li><strong>Residence . . . . .</strong> USA</li>
-										<li><strong>Freelance . . . . .</strong> Available</li>
-										<li><strong>Address . . . . .</strong> California, USA</li>
+										<li><strong>Age . . . . .</strong>@Model.AboutMe.Age</li>
+										<li><strong>Residence . . . . .</strong>@Model.AboutMe.Residence</li>
+										<li><strong>Freelance . . . . .</strong>@Model.AboutMe.Freelance</li>
+										<li><strong>Address . . . . .</strong>@Model.AboutMe.Address</li>
 									</ul>
 								</div>
 							</div>
@@ -54,73 +54,25 @@
 						<!-- content -->
 						<div class="row service-items border-line-v">
 							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+							@foreach (var item in Model.MyServices)
+						   {
+							   <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
 								<div class="service-item">
 									<div class="icon">
 										<span class="fa fa-code"></span>
 									</div>
 									<div class="name">
 										<span >
-										Web Development								</span>
+										@item.Head								</span>
 									</div>
 									<div class="desc">
 										<div >
-											<p>Modern and mobile-ready website that will help you reach all of your marketing.</p>
+											<p>@item.Title</p>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-music"></span>
-									</div>
-									<div class="name">
-										<span >
-										Music Writing								</span>
-									</div>
-									<div class="desc">
-										<div >
-											<p>Music copying, writing, creating, transcription, arranging and composition services.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-buysellads"></span>
-									</div>
-									<div class="name">
-										<span >
-										Advetising								</span>
-									</div>
-									<div class="desc">
-										<div >
-											<p>Advertising services include television, radio, print, mail, and web apps.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- service item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon">
-										<span class="fa fa-gamepad"></span>
-									</div>
-									<div class="name">
-										<span >
-										Game Development								</span>
-									</div>
-									<div class="desc">
-										<div >
-											<p>Developing memorable and unique mobile android, ios and video games.</p>
-										</div>
-									</div>
-								</div>
-							</div>
+						   }
 						</div>
 						<div class="clear"></div>
 
@@ -138,58 +90,37 @@
 						<div class="row pricing-items">
 
 							<!-- pricing item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+							@foreach (var item in Model.Pricing)
+						   {
+							   <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="pricing-item">
 									<div class="icon"><i class="fa fa-battery-half"></i></div>
-									<div class="name">Basic</div>
+									<div class="name">@item.Head</div>
 									<div class="amount">
 										<span class="dollar">$</span>
-										<span class="number">22</span>
+										<span class="number">@item.Price</span>
 										<span class="period">hour</span>
 									</div>
 									<div class="feature-list">
 										<ul>
-											<li>Web Development</li>
-											<li>Advetising</li>
-											<li>Game Development</li>
-											<li class="disable">Music Writing</li>
-											<li class="disable">Photography <strong>new</strong></li>
-										</ul>
-									</div>
-									<div class="lnks">
-										<a href="#" class="lnk">
-											<span class="text">Buy Basic</span>
-										</a>
-									</div>
-								</div>
-							</div>
+											@foreach (var adv in Model.PricingAdvantages)
+											{
+												<li>@adv.Title</li>
+											}
 
-							<!-- pricing item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="pricing-item">
-									<div class="icon"><i class="fa fa-battery-full"></i></div>
-									<div class="name">Pro</div>
-									<div class="amount">
-										<span class="dollar">$</span>
-										<span class="number">48</span>
-										<span class="period">hour</span>
-									</div>
-									<div class="feature-list">
-										<ul>
-											<li>Web Development</li>
-											<li>Advetising</li>
-											<li>Game Development</li>
-											<li>Music Writing</li>
-											<li>Photography <strong>new</strong></li>
+
+											@*<li class="disable">Photography <strong>new</strong></li>*@
+											@*<li class="disable">Photography </li>*@
 										</ul>
 									</div>
 									<div class="lnks">
 										<a href="#" class="lnk">
-											<span class="text">Buy Pro</span>
+											<span class="text">Buy @item.Head</span>
 										</a>
 									</div>
 								</div>
 							</div>
+						   }
 
 							<div class="clear"></div>
 						</div>
@@ -318,7 +249,7 @@
 								<div class="revs-item">
 									<div class="text">
 										<div >
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.							
+											@*@Model.Quote.Title*@
 										</div>
 									</div>
 									<div class="user">
@@ -326,8 +257,8 @@
 											<img src="~/images/profile.png" alt="Ryan Adlard" />
 										</div>
 										<div class="info">
-											<div class="name">Ryan Adlard</div>
-											<div class="company">Web Designer</div>
+											@*<div class="name">@Model.Quote.FullName</div>*@
+											@*<div class="company">@Model.Quote.Job</div>*@
 										</div>
 										<div class="clear"></div>
 									</div>
