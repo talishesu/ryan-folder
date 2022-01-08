@@ -146,3 +146,7 @@ C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Vie
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Views\Works\Index.cshtml.g.cs
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Views\Blog\Index.cshtml.g.cs
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Views\Contacts\Index.cshtml.g.cs
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
