@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using riode.Models.ViewModels;
 using ryan.Models.DataContexts;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ryan.Controllers
 {
@@ -13,8 +15,8 @@ namespace ryan.Controllers
         }
         public IActionResult Index()
         {
-            AboutViewModel vm = new AboutViewModel();
-            return View(vm);
+
+            return View();
         }
     }
 }
