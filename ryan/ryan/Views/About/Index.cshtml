@@ -22,9 +22,7 @@
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="text-box">
 									<p>
-										I am Ryan Adlard, web designer from USA, California. I have rich experience in 
-										web site design and building and customization, also I am good at wordpress. 
-										I love to talk with you about our unique.
+										@Model.AboutMe.Info
 									</p>
 								</div>
 							</div>
@@ -105,7 +103,15 @@
 										<ul>
 											@foreach (var adv in Model.PricingAdvantages)
 											{
-												<li>@adv.Title</li>
+												@if(item.Id == adv.PricingId){
+													@if(adv.New == true){
+														<li>@adv.Title <strong>new</strong></li>
+
+													}else{
+														<li>@adv.Title</li>
+
+													}
+												}
 											}
 
 
@@ -138,37 +144,16 @@
 						<!-- content -->
 						<div class="row fuct-items">
 
-							<!-- fuct item -->
+							@foreach (var item in Model.FunFact)
+						   {
+							   <!-- fuct item -->
 							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
 								<div class="fuct-item">
 									<div class="icon"><span class="fa fa-music"></span></div>
-									<div class="name">80 Albumes Listened</div>
+									<div class="name">@item.Title</div>
 								</div>
 							</div>
-
-							<!-- fuct item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="fuct-item">
-									<div class="icon"><span class="fa fa-trophy"></span></div>
-									<div class="name">15 Awards Won</div>
-								</div>
-							</div>
-
-							<!-- fuct item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="fuct-item">
-									<div class="icon"><span class="fa fa-coffee"></span></div>
-									<div class="name">1 000 Cups of coffee</div>
-								</div>
-							</div>
-
-							<!-- fuct item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="fuct-item">
-									<div class="icon"><span class="fa fa-flag"></span></div>
-									<div class="name">10 Countries Visited</div>
-								</div>
-							</div>
+						   }
 
 							<div class="clear"></div>
 						</div>
@@ -186,49 +171,19 @@
 						<!-- content -->
 						<div class="row client-items">
 
-							<!-- client item -->
+							@foreach (var item in Model.Clients)
+						   {
+							   <!-- client item -->
 							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
 								<div class="client-item">
 									<div class="image">
-										<a target="_blank" href="https://www.google.com/">
-											<img src="~/images/clients/client_1.png" alt="" />
+										<a>
+											<img src="~/images/clients/@item.ImagePath" alt="" />
 										</a>
 									</div>
 								</div>
 							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://www.google.com/">
-											<img src="~/images/clients/client_2.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://www.google.com/">
-											<img src="~/images/clients/client_3.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://www.google.com/">
-											<img src="~/images/clients/client_4.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
+						   }
 
 							<div class="clear"></div>
 						</div>
@@ -249,16 +204,16 @@
 								<div class="revs-item">
 									<div class="text">
 										<div >
-											@*@Model.Quote.Title*@
+											@Model.Quote.Title
 										</div>
 									</div>
 									<div class="user">
 										<div class="img">
-											<img src="~/images/profile.png" alt="Ryan Adlard" />
+											<img src="~/images/quote/@Model.Quote.ImagePath" alt="Ryan Adlard" />
 										</div>
 										<div class="info">
-											@*<div class="name">@Model.Quote.FullName</div>*@
-											@*<div class="company">@Model.Quote.Job</div>*@
+											<div class="name">@Model.Quote.FullName</div>*
+											<div class="company">@Model.Quote.Job</div>
 										</div>
 										<div class="clear"></div>
 									</div>

@@ -15,6 +15,5 @@ namespace ryan.Models.ViewModels
         public List<Clients> Clients { get; set; }
         public Quote Quote { get; set; }
         public AboutMe AboutMe { get; set; }
-        public About About { get; set; }
     }
 }

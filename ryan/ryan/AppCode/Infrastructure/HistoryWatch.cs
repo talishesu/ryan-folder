@@ -2,7 +2,7 @@
 
 namespace ryan.AppCode.Infrastructure
 {
-    public class HistoryWatch : BaseEntities
+    public class HistoryWatch
     {
         public int? CreatedByUserId { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow.AddHours(4);
