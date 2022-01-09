@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ryan.Models.DataContexts;
 
 namespace ryan.Migrations
 {
     [DbContext(typeof(RyanDbContext))]
-    partial class RyanDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220109102048_DbUpdated6")]
+    partial class DbUpdated6
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
