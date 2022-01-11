@@ -1,6 +1,6 @@
-﻿@model List<Blog>
+﻿@model Blog
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Detail";
 }
 
 <!--
@@ -19,31 +19,26 @@
 
 						<!-- content -->
 						<div class="row border-line-v">
-							@foreach (var item in Model)
-							{
 								<!-- blog item -->
-								<div class="col col-d-6 col-t-6 col-m-12">
+								<div class="col col-d-12 col-t-12 col-m-12">
 									<div class="box-item">
 										<div class="image">
-											<a asp-controller="Blog" asp-action="Detail" asp-route-id="@item.Id">
-												<img src="~/images/blog/@item.ImagePath" alt="By spite about do of allow" />
+												<img src="~/images/blog/@Model.ImagePath" alt="By spite about do of allow" />
 												<span class="info">
 													<span class="ion ion-document-text"></span>
 												</span>
-											</a>
 										</div>
 										<div class="desc">
-											<a href="blog-post-new.html">
-												<span class="date">@item.CreatedDate</span>
+											<a>
+												<span class="date">@Model.CreatedDate</span>
 											</a>
-											<a href="blog-post-new.html" class="name">@item.Head</a>
+											<a  class="name">@Model.Head</a>
 											<div class="text">
-												<p>@item.Title</p>
+												<p>@Model.Title</p>
 											</div>
 										</div>
 									</div>
 								</div>
-							}
 							<div class="clear"></div>
 						</div>
 					</div>

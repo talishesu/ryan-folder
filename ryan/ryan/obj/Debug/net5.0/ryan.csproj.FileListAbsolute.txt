@@ -151,3 +151,4 @@ C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\ryan.pdb
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\ryan.genruntimeconfig.cache
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Views\Shared\Components\Info\Default.cshtml.g.cs
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\ryan.csproj.AssemblyReference.cache
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Views\Blog\Detail.cshtml.g.cs

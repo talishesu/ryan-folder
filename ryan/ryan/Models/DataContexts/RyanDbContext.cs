@@ -26,6 +26,7 @@ namespace ryan.Models.DataContexts
         public DbSet<Knowledge> Knowledge { get; set; }
         public DbSet<Testimonials> Testimonials { get; set; }
         public DbSet<Works> Works { get; set; }
+        public DbSet<Blog> Blog { get; set; }
 
     }
 }
