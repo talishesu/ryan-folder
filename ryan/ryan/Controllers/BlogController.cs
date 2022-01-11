@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ryan.Models.DataContexts;
+using ryan.Models.Entities;
+using ryan.Models.ViewModels;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -24,16 +26,28 @@ namespace ryan.Controllers
             {
                 return NotFound();
             }
-            var blog = await db.Blog.FirstOrDefaultAsync(b => b.Id == id);
-            if (blog == null)
+            BlogViewModel vm = new BlogViewModel();
+            vm.Blog = await db.Blog.FirstOrDefaultAsync(b => b.Id == id);
+            if (vm.Blog == null)
             {
                 return NotFound();
             }
-            if (blog.DeletedDate != null)
+            vm.BlogComment = await db.BlogComment.Where(b => b.BlogId == id && b.DeletedDate == null).ToListAsync();
+            if (vm.Blog.DeletedDate != null)
             {
                 return NotFound();
             }
-            return View(blog);
+            return View(vm);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Create(BlogViewModel comment)
+        {
+                var BlogComment = comment.SimpleComment;
+                await db.BlogComment.AddAsync(BlogComment);
+                await db.SaveChangesAsync();
+                return RedirectToAction("Index");
+
+            return View(comment);
         }
     }
 }
