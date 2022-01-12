@@ -28,6 +28,8 @@ namespace ryan.Models.DataContexts
         public DbSet<Works> Works { get; set; }
         public DbSet<Blog> Blog { get; set; }
         public DbSet<BlogComment> BlogComment { get; set; }
+        public DbSet<Contact> Contact { get; set; }
+        public DbSet<ContactForm> ContactForm { get; set; }
 
     }
 }

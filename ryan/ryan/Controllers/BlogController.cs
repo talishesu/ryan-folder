@@ -46,8 +46,6 @@ namespace ryan.Controllers
                 await db.BlogComment.AddAsync(BlogComment);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
-
-            return View(comment);
         }
     }
 }
