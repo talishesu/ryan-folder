@@ -150,5 +150,8 @@ C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\ref\ryan.
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\ryan.pdb
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\ryan.genruntimeconfig.cache
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Views\Shared\Components\Info\Default.cshtml.g.cs
-C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\ryan.csproj.AssemblyReference.cache
 C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Views\Blog\Detail.cshtml.g.cs
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Areas\Admin\Views\AboutMe\Index.cshtml.g.cs
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\ryan.csproj.AssemblyReference.cache
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Areas\Admin\Views\MyServices\Index.cshtml.g.cs
+C:\Users\CalenLoki\source\repos\ryan-folder\ryan\ryan\obj\Debug\net5.0\Razor\Areas\Admin\Views\MyServices\Detail.cshtml.g.cs

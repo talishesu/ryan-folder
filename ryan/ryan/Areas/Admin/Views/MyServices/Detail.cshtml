@@ -1,0 +1,15 @@
+﻿@model MyServices
+@{
+    ViewData["Title"] = "Detail";
+}
+<form method="post">
+    <div class="col-lg">
+    <input class="form-control" placeholder="Input box" type="text" value="@Model.Head">
+</div>
+<div class="col-lg">
+    <input class="form-control" placeholder="Input box" type="text" value="@Model.Title">
+</div>
+<p>@Model.CreatedDate</p>
+<button class="btn btn-az-primary btn-block">Edit</button>
+<button class="btn btn-az-primary btn-block">Delete</button>
+</form>

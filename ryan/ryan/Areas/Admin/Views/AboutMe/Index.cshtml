@@ -1,0 +1,32 @@
+﻿@model AboutMe
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form method="post">
+    <div class="col-lg">
+        <label asp-for="Info"></label>
+        <textarea asp-for="Info" rows="3" class="form-control" placeholder="Textarea">@Model.Info</textarea>
+    </div>
+
+    <div class="col-lg">
+        <label asp-for="Age"></label>
+        <input asp-for="Age" class="form-control" placeholder="Input box" type="text" value="@Model.Age">
+    </div>
+    <div class="col-lg">
+        <label asp-for="Residence"></label>
+        <input asp-for="Residence" class="form-control" placeholder="Input box" type="text" value="@Model.Residence">
+    </div>
+
+    <div class="col-lg">
+        <label asp-for="Freelance"></label>
+        <input asp-for="Freelance" class="form-control" placeholder="Input box" type="text" value="@Model.Freelance">
+    </div>
+
+    <div class="col-lg">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" placeholder="Input box" type="text" value="@Model.Address">
+    </div>
+    <button asp-action="Edit" type="submit" class="btn btn-az-primary btn-block">Edit</button>
+</form>
+            
